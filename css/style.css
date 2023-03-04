@@ -1,0 +1,1115 @@
+@charset "UTF-8";
+/*RESET*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-family: 'Lato', sans-serif; }
+
+.main-home .contenido-uno .boton, .main-servicios .contenido-siete .boton-dos, .main-tecnologias .contenido-nueve .boton-tres, .main-industrias .contenido-once .boton-cuatro, .main-historias .contenido-doce .boton-cinco {
+  background-color: #dd8f12;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+  margin-left: 1rem;
+  font-weight: bolder;
+  color: white;
+  box-shadow: -1px 3px 5px black; }
+
+.main-home, footer, .main-servicios, .main-tecnologias, .main-industrias, .main-historias {
+  display: flex;
+  flex-direction: column; }
+
+.main-home .contenido-uno, .main-home .contenido-dos, .main-home .imagenes-main, section, .main-servicios .contenido-siete, .main-tecnologias .contenido-nueve, .main-industrias .contenido-once, .main-historias .contenido-doce {
+  padding-left: 0.8rem;
+  padding-right: 0.8rem; }
+
+.main-home .contenido-uno h3, .main-servicios .contenido-siete h3, .main-tecnologias .contenido-nueve h3, .main-industrias .contenido-once h3, .main-historias .contenido-doce h3 {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  color: #dd8f12;
+  letter-spacing: 2px;
+  font-weight: bold; }
+
+.main-home .contenido-uno h1, .main-servicios .contenido-siete h1, .main-tecnologias .contenido-nueve h1, .main-industrias .contenido-once h1, .main-historias .contenido-doce h1 {
+  margin-bottom: 2rem;
+  color: #14213D;
+  font-weight: bold;
+  font-size: 2rem; }
+
+.main-home .contenido-uno p, .main-servicios .contenido-siete p, .main-tecnologias .contenido-nueve p, .main-industrias .contenido-once p, .main-historias .contenido-doce p {
+  margin-bottom: 2.5rem;
+  color: #14213D;
+  font-weight: 700; }
+
+.main-servicios .contenido-siete h5, .main-tecnologias .contenido-nueve h5, .main-industrias .contenido-once h5, .main-historias .contenido-doce h5 {
+  margin-top: 2.5rem;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  color: #dd8f12;
+  letter-spacing: 2px; }
+
+section .contenido-ocho h3, section .contenido-diez h3, .gris .contenido-trece h3 {
+  font-size: 1.6rem;
+  color: #dd8f12;
+  font-weight: 1000;
+  letter-spacing: 2px;
+  margin-bottom: 1rem; }
+
+section .contenido-ocho h2, section .contenido-diez h2 {
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+  color: white;
+  font-weight: bold; }
+
+/*ESTILOS INDEX*/
+/*ESTILOS HEADER*/
+header {
+  background-color: white;
+  width: 100%;
+  position: fixed;
+  z-index: 1; }
+  header nav div div ul li {
+    color: #14213D;
+    font-size: 1rem;
+    font-weight: 1000; }
+
+/*ESTILOS MAIN INDEX*/
+.main-home {
+  background-color: #f2f2f2; }
+  .main-home .contenido-uno {
+    padding-top: 7rem; }
+  .main-home .contenido-dos h3 {
+    font-size: 1.2rem;
+    margin-top: 2.5rem;
+    color: #14213D;
+    font-weight: 1000;
+    margin-bottom: 1rem; }
+  .main-home .contenido-dos p {
+    color: #14213D;
+    font-weight: 700; }
+  .main-home .imagenes-main {
+    margin-top: 2.5rem;
+    margin-bottom: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1.5rem; }
+    .main-home .imagenes-main div img {
+      width: 95%; }
+  .main-home .contenedor-imagen img {
+    width: 100%; }
+
+/*ESTILOS CONTENIDO SECUNDARIO INDEX*/
+section .secundario-home .contenido-tres h3 {
+  font-size: 1.2rem;
+  padding-top: 4rem;
+  color: #dd8f12;
+  font-weight: 1000;
+  letter-spacing: 2px; }
+
+section .secundario-home .contenido-tres h2 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  color: white;
+  font-weight: bold; }
+
+section .secundario-home .contenido-tres p {
+  color: white;
+  font-weight: 600; }
+
+section .secundario-home .contenido-cuatro h2 {
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  color: white;
+  font-weight: bold; }
+
+section .secundario-home .contenido-cuatro p {
+  color: white;
+  font-weight: 600; }
+
+section .secundario-home .contenido-cuatro h3 {
+  font-size: 1.2rem;
+  padding-bottom: 4rem;
+  color: #dd8f12;
+  font-weight: 700;
+  margin-bottom: 0px; }
+
+/*ESTILOS CONTENIDO TERCIARIO INDEX*/
+section .contenido-cinco h2 {
+  font-size: 5rem;
+  color: white;
+  font-weight: bolder; }
+
+section .contenido-cinco h3 {
+  font-size: 1.4rem;
+  margin-bottom: 4rem;
+  font-weight: bold;
+  color: white; }
+
+section .terciario-home {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center; }
+  section .terciario-home div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1.8rem;
+    margin: 0.8rem;
+    width: 335px;
+    background-color: #acb4b4;
+    height: 450px;
+    box-shadow: -1px 3px 10px grey; }
+    section .terciario-home div h3 {
+      color: #14213D;
+      font-weight: bold; }
+    section .terciario-home div p {
+      color: #14213D;
+      font-weight: 600; }
+
+/*ESTILOS CONTENIDO CUATERNARIO INDEX*/
+section {
+  background-color: #14213D; }
+  section .contenido-seis h2 {
+    padding-top: 4rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    color: #dd8f12;
+    font-weight: bolder; }
+  section .contenido-seis P {
+    margin-bottom: 4rem;
+    color: white;
+    font-weight: 600; }
+  section .cuaternario-home {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center; }
+    section .cuaternario-home div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+      gap: 1rem;
+      padding: 1.8rem;
+      margin: 0.8rem;
+      width: 335px;
+      background-color: #dd8f12;
+      height: 450px;
+      box-shadow: -1px 3px 10px #dd8f12; }
+      section .cuaternario-home div h6 {
+        color: black;
+        font-weight: bold; }
+
+/*ESTILOS CONTENIDO FOOTER*/
+footer {
+  padding-bottom: 1rem;
+  background-color: #f2f2f2; }
+  footer .logos-comunicacion {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    padding-top: 0.8rem; }
+  footer h5 {
+    font-size: 0.6rem;
+    text-align: center;
+    margin-top: 0.8rem;
+    margin-bottom: 0px; }
+
+/*ESTILOS INDEX TABLET*/
+@media screen and (min-width: 495px) {
+  .main-home .imagenes-main {
+    gap: 4rem; }
+    .main-home .imagenes-main div img {
+      width: 100%; } }
+
+@media screen and (min-width: 600px) {
+  header nav {
+    margin-left: 3rem; }
+  .main-home {
+    padding-left: 3rem;
+    padding-right: 3rem; }
+    .main-home .imagenes-main {
+      gap: 4.5rem; }
+  section .contenido-tres {
+    padding-left: 3rem;
+    padding-right: 3rem; }
+  section .contenido-cuatro {
+    padding-left: 3rem;
+    padding-right: 3rem; }
+  section .contenido-cinco {
+    padding-left: 3rem;
+    padding-right: 3rem; }
+  section .contenido-seis {
+    padding-left: 3rem;
+    padding-right: 3rem; }
+  section .cuaternario-home {
+    padding-bottom: 1rem; }
+  footer h5 {
+    font-size: 1rem; } }
+
+@media screen and (min-width: 750px) {
+  header nav {
+    margin-left: 5%; }
+  .main-home {
+    padding-left: 5%;
+    padding-right: 5%; }
+    .main-home .imagenes-main {
+      gap: 0.5rem; }
+      .main-home .imagenes-main div img {
+        width: 90%; } }
+
+/*ESTILOS INDEX PC PEQUEÑA*/
+@media screen and (min-width: 992px) {
+  header nav {
+    margin-left: 1rem; }
+    header nav ul li:hover {
+      transform: scale(1.1); }
+  main .main-home {
+    display: grid;
+    grid-template-columns: 45% 55%;
+    grid-template-rows: 2.5fr 1fr 0.5fr;
+    grid-template-areas: "contenido-uno contenedor-imagen" "contenido-dos contenedor-imagen" "imagenes-main contenedor-imagen";
+    height: 100vh;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 0rem; }
+    main .main-home .contenido-uno {
+      grid-area: contenido-uno;
+      width: 70%; }
+    main .main-home .contenido-dos {
+      grid-area: contenido-dos;
+      width: 70%; }
+    main .main-home .imagenes-main {
+      grid-area: imagenes-main;
+      width: 400px; }
+      main .main-home .imagenes-main div img {
+        width: 80%; }
+    main .main-home .contenedor-imagen {
+      grid-area: contenedor-imagen; }
+  section .contenido-tres {
+    padding-top: 2.5rem;
+    padding-left: 1rem; }
+  section .contenido-cuatro {
+    padding-left: 1rem; }
+  section .terciario-home div:hover {
+    transform: scale(1.03);
+    transition-duration: 0.5s; }
+  section .contenido-cinco {
+    padding-left: 1rem; }
+  section .contenido-seis {
+    padding-left: 1rem; }
+  section .cuaternario-home div:hover {
+    transform: scale(1.03);
+    transition-duration: 0.5s; } }
+
+/*ESTILOS INDEX PC MEDIANA*/
+@media screen and (min-width: 1250px) {
+  main .main-home {
+    display: grid;
+    grid-template-columns: 55% 45%;
+    grid-template-rows: 4fr 1fr 2fr;
+    grid-template-areas: "contenido-uno contenedor-imagen" "contenido-dos contenedor-imagen" "imagenes-main contenedor-imagen";
+    justify-content: space-between; }
+    main .main-home .contenido-uno {
+      grid-area: contenido-uno;
+      width: 80%; }
+      main .main-home .contenido-uno h3 {
+        font-size: 1rem; }
+      main .main-home .contenido-uno h1 {
+        font-size: 3rem; }
+      main .main-home .contenido-uno p {
+        font-size: 1rem; }
+      main .main-home .contenido-uno .boton {
+        font-size: 1.3rem;
+        padding: 0.7rem 1.7rem 0.7rem 1.7rem; }
+    main .main-home .contenido-dos {
+      grid-area: contenido-dos;
+      width: 80%; }
+      main .main-home .contenido-dos h3 {
+        font-size: 1.7rem; }
+      main .main-home .contenido-dos p {
+        font-size: 1rem; }
+    main .main-home .imagenes-main {
+      grid-area: imagenes-main;
+      width: 100%; }
+      main .main-home .imagenes-main div img {
+        width: 70%; }
+    main .main-home .contenedor-imagen {
+      grid-area: contenedor-imagen; }
+  section .contenido-tres {
+    padding-left: 1rem; }
+  section .contenido-cuatro {
+    padding-left: 1rem; }
+  section .contenido-cinco {
+    padding-left: 1rem; }
+  section .contenido-seis {
+    padding-left: 1rem; } }
+
+/*ESTILOS INDEX PC MEDIANA GRANDE*/
+@media screen and (min-width: 1300px) {
+  header nav {
+    margin-left: 4rem; }
+  main .main-home .contenido-uno {
+    padding-left: 4rem; }
+  main .main-home .contenido-dos {
+    padding-left: 4rem; }
+  main .main-home .imagenes-main {
+    padding-left: 4rem; }
+  section .contenido-tres {
+    padding-left: 8rem;
+    padding-right: 8rem; }
+  section .contenido-cuatro {
+    padding-left: 8rem;
+    padding-right: 8rem; }
+  section .terciario-home {
+    padding-left: 4rem;
+    padding-right: 4rem; }
+  section .contenido-cinco {
+    padding-left: 8rem;
+    padding-right: 8rem; }
+  section .contenido-seis {
+    padding-left: 8rem;
+    padding-right: 8rem; }
+  section .cuaternario-home {
+    padding-left: 4rem;
+    padding-right: 4rem; } }
+
+/*ESTILOS INDEX PC GRANDE*/
+@media screen and (min-width: 1548px) {
+  header nav {
+    margin-left: 8rem; }
+  main .main-home {
+    grid-template-rows: 4fr 0.1fr 3fr; }
+    main .main-home .contenido-uno {
+      padding-left: 8rem; }
+      main .main-home .contenido-uno p {
+        margin-bottom: 3rem; }
+    main .main-home .contenido-dos {
+      padding-left: 8rem; }
+      main .main-home .contenido-dos h3 {
+        margin-top: 0; }
+    main .main-home .imagenes-main {
+      padding-left: 8rem; }
+  section .contenido-tres {
+    padding-left: 15rem;
+    padding-right: 15rem; }
+  section .contenido-cuatro {
+    padding-left: 15rem;
+    padding-right: 15rem; }
+  section .terciario-home {
+    padding-left: 15rem;
+    padding-right: 15rem; }
+  section .contenido-cinco {
+    padding-left: 15rem;
+    padding-right: 15rem; }
+  section .contenido-seis {
+    padding-left: 15rem;
+    padding-right: 15rem; }
+  section .cuaternario-home {
+    padding-left: 15rem;
+    padding-right: 15rem; } }
+
+.main-home .contenido-uno .boton, .main-servicios .contenido-siete .boton-dos, .main-tecnologias .contenido-nueve .boton-tres, .main-industrias .contenido-once .boton-cuatro, .main-historias .contenido-doce .boton-cinco {
+  background-color: #dd8f12;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+  margin-left: 1rem;
+  font-weight: bolder;
+  color: white;
+  box-shadow: -1px 3px 5px black; }
+
+.main-home, footer, .main-servicios, .main-tecnologias, .main-industrias, .main-historias {
+  display: flex;
+  flex-direction: column; }
+
+.main-home .contenido-uno, .main-home .contenido-dos, .main-home .imagenes-main, section, .main-servicios .contenido-siete, .main-tecnologias .contenido-nueve, .main-industrias .contenido-once, .main-historias .contenido-doce {
+  padding-left: 0.8rem;
+  padding-right: 0.8rem; }
+
+.main-home .contenido-uno h3, .main-servicios .contenido-siete h3, .main-tecnologias .contenido-nueve h3, .main-industrias .contenido-once h3, .main-historias .contenido-doce h3 {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  color: #dd8f12;
+  letter-spacing: 2px;
+  font-weight: bold; }
+
+.main-home .contenido-uno h1, .main-servicios .contenido-siete h1, .main-tecnologias .contenido-nueve h1, .main-industrias .contenido-once h1, .main-historias .contenido-doce h1 {
+  margin-bottom: 2rem;
+  color: #14213D;
+  font-weight: bold;
+  font-size: 2rem; }
+
+.main-home .contenido-uno p, .main-servicios .contenido-siete p, .main-tecnologias .contenido-nueve p, .main-industrias .contenido-once p, .main-historias .contenido-doce p {
+  margin-bottom: 2.5rem;
+  color: #14213D;
+  font-weight: 700; }
+
+.main-servicios .contenido-siete h5, .main-tecnologias .contenido-nueve h5, .main-industrias .contenido-once h5, .main-historias .contenido-doce h5 {
+  margin-top: 2.5rem;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  color: #dd8f12;
+  letter-spacing: 2px; }
+
+section .contenido-ocho h3, section .contenido-diez h3, .gris .contenido-trece h3 {
+  font-size: 1.6rem;
+  color: #dd8f12;
+  font-weight: 1000;
+  letter-spacing: 2px;
+  margin-bottom: 1rem; }
+
+section .contenido-ocho h2, section .contenido-diez h2 {
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+  color: white;
+  font-weight: bold; }
+
+/*ESTILOS SERVICIOS*/
+/*ESTILOS MAIN SERVICIOS*/
+.main-servicios {
+  background-color: white; }
+  .main-servicios .contenido-siete {
+    padding-top: 7rem; }
+  .main-servicios .imagen-dos img {
+    width: 100%; }
+
+/*ESTILOS CONTENIDO SECUNDARIO SERVICIOS*/
+section .contenido-ocho {
+  padding-top: 6rem; }
+
+section .industrias-tarjetas {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center; }
+  section .industrias-tarjetas div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1.8rem;
+    margin: 0.8rem;
+    width: 335px;
+    background-color: #acb4b4;
+    height: 400px;
+    box-shadow: -1px 3px 10px grey; }
+    section .industrias-tarjetas div h3 {
+      color: white;
+      font-weight: bold; }
+    section .industrias-tarjetas div p {
+      color: white;
+      font-weight: 700; }
+
+/*ESTILOS SERVICIOS TABLET*/
+@media screen and (min-width: 600px) {
+  .main-servicios {
+    padding-left: 3rem;
+    padding-right: 3rem; }
+  section .contenido-ocho {
+    padding-left: 3rem;
+    padding-right: 3rem; }
+  section .industrias-tarjetas {
+    padding-bottom: 1rem; } }
+
+@media screen and (min-width: 780px) {
+  .main-servicios p {
+    width: 650px; } }
+
+/*ESTILOS SERVICIOS PC PEQUEÑA*/
+@media screen and (min-width: 992px) {
+  main .main-servicios {
+    display: grid;
+    grid-template-columns: 45% 50%;
+    grid-template-rows: auto;
+    grid-template-areas: "contenido-siete imagen-dos";
+    align-items: center;
+    padding: 0;
+    height: 100vh;
+    padding-left: 1rem;
+    padding-right: 0rem;
+    gap: 4rem; }
+    main .main-servicios .contenido-siete {
+      grid-area: contenido-siete; }
+      main .main-servicios .contenido-siete p {
+        width: 80%; }
+    main .main-servicios .imagen-dos {
+      grid-area: imagen-dos; }
+  section .contenido-ocho {
+    padding-left: 1rem; }
+    section .contenido-ocho h2 {
+      font-size: 1.5rem; }
+  section .industrias-tarjetas {
+    padding-left: 4rem;
+    padding-right: 4rem; }
+    section .industrias-tarjetas div:hover {
+      transform: scale(1.03);
+      transition-duration: 0.5s; } }
+
+/*ESTILOS SERVICIOS PC MEDIANA*/
+@media screen and (min-width: 1250px) {
+  main .main-servicios .contenido-siete h3 {
+    font-size: 1rem; }
+  main .main-servicios .contenido-siete h1 {
+    font-size: 3rem; }
+  main .main-servicios .contenido-siete p {
+    font-size: 1rem; }
+  main .main-servicios .contenido-siete .boton-dos {
+    font-size: 1.3rem;
+    padding: 0.7rem 1.7rem 0.7rem 1.7rem; }
+  main .main-servicios .contenido-siete h5 {
+    font-size: 0.9rem; }
+  section .industrias-tarjetas {
+    padding-left: 6rem;
+    padding-right: 6rem; } }
+
+/*ESTILOS SERVICIOS PC MEDIANA GRANDE*/
+@media screen and (min-width: 1300px) {
+  main .main-servicios .contenido-siete {
+    padding-left: 4rem; }
+  main .main-servicios .imagen-dos img {
+    width: 85%; }
+  section .contenido-ocho {
+    padding-left: 8rem;
+    padding-right: 8rem; } }
+
+/*ESTILOS SERVICIOS PC GRANDE*/
+@media screen and (min-width: 1548px) {
+  main .main-servicios .contenido-siete {
+    padding-left: 8rem; }
+  section .contenido-ocho {
+    padding-left: 15rem;
+    padding-right: 15rem; } }
+
+.main-home .contenido-uno .boton, .main-servicios .contenido-siete .boton-dos, .main-tecnologias .contenido-nueve .boton-tres, .main-industrias .contenido-once .boton-cuatro, .main-historias .contenido-doce .boton-cinco {
+  background-color: #dd8f12;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+  margin-left: 1rem;
+  font-weight: bolder;
+  color: white;
+  box-shadow: -1px 3px 5px black; }
+
+.main-home, footer, .main-servicios, .main-tecnologias, .main-industrias, .main-historias {
+  display: flex;
+  flex-direction: column; }
+
+.main-home .contenido-uno, .main-home .contenido-dos, .main-home .imagenes-main, section, .main-servicios .contenido-siete, .main-tecnologias .contenido-nueve, .main-industrias .contenido-once, .main-historias .contenido-doce {
+  padding-left: 0.8rem;
+  padding-right: 0.8rem; }
+
+.main-home .contenido-uno h3, .main-servicios .contenido-siete h3, .main-tecnologias .contenido-nueve h3, .main-industrias .contenido-once h3, .main-historias .contenido-doce h3 {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  color: #dd8f12;
+  letter-spacing: 2px;
+  font-weight: bold; }
+
+.main-home .contenido-uno h1, .main-servicios .contenido-siete h1, .main-tecnologias .contenido-nueve h1, .main-industrias .contenido-once h1, .main-historias .contenido-doce h1 {
+  margin-bottom: 2rem;
+  color: #14213D;
+  font-weight: bold;
+  font-size: 2rem; }
+
+.main-home .contenido-uno p, .main-servicios .contenido-siete p, .main-tecnologias .contenido-nueve p, .main-industrias .contenido-once p, .main-historias .contenido-doce p {
+  margin-bottom: 2.5rem;
+  color: #14213D;
+  font-weight: 700; }
+
+.main-servicios .contenido-siete h5, .main-tecnologias .contenido-nueve h5, .main-industrias .contenido-once h5, .main-historias .contenido-doce h5 {
+  margin-top: 2.5rem;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  color: #dd8f12;
+  letter-spacing: 2px; }
+
+section .contenido-ocho h3, section .contenido-diez h3, .gris .contenido-trece h3 {
+  font-size: 1.6rem;
+  color: #dd8f12;
+  font-weight: 1000;
+  letter-spacing: 2px;
+  margin-bottom: 1rem; }
+
+section .contenido-ocho h2, section .contenido-diez h2 {
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+  color: white;
+  font-weight: bold; }
+
+/*ESTILOS TECNOLOGIAS*/
+/*ESTILOS MAIN TECNOLOGIAS*/
+.main-tecnologias {
+  background-color: #f2f2f2; }
+  .main-tecnologias .contenido-nueve {
+    padding-top: 7rem; }
+  .main-tecnologias .imagen-tres img {
+    width: 100%;
+    padding: 3.5rem 0.6rem 3.7rem 0.6rem; }
+
+/*ESTILOS CONTENIDO SECUNDARIO TECNOLOGIAS*/
+section .contenido-diez {
+  padding-top: 6rem; }
+
+section .tecnologias-tarjetas {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center; }
+  section .tecnologias-tarjetas div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1.8rem;
+    margin: 0.8rem;
+    width: 335px;
+    background-color: #dd8f12;
+    height: 400px;
+    box-shadow: -1px 3px 10px #dd8f12; }
+    section .tecnologias-tarjetas div h3 {
+      color: #14213D;
+      font-weight: bold; }
+    section .tecnologias-tarjetas div p {
+      color: #14213D;
+      font-weight: 700; }
+
+/*ESTILOS TECNOLOGIAS TABLET*/
+@media screen and (min-width: 600px) {
+  .main-tecnologias {
+    padding-left: 3rem;
+    padding-right: 3rem; }
+  section .contenido-diez {
+    padding-left: 3rem;
+    padding-right: 3rem; }
+  section .tecnologias-tarjetas {
+    padding-bottom: 1rem; } }
+
+@media screen and (min-width: 780px) {
+  .main-tecnologias .contenido-nueve p {
+    width: 700px; } }
+
+/*ESTILOS TECNOLOGIA PC PEQUEÑA*/
+@media screen and (min-width: 992px) {
+  main .main-tecnologias {
+    display: grid;
+    grid-template-columns: 45% 55%;
+    grid-template-rows: auto;
+    grid-template-areas: "contenido-nueve imagen-tres";
+    align-items: center;
+    padding: 0;
+    height: 100vh;
+    padding-left: 1rem;
+    padding-right: 0rem; }
+    main .main-tecnologias .contenido-nueve {
+      grid-area: contenido-nueve; }
+      main .main-tecnologias .contenido-nueve p {
+        width: 80%; }
+    main .main-tecnologias .imagen-tres {
+      grid-area: imagen-tres; }
+  section .contenido-diez {
+    padding-left: 1rem; }
+    section .contenido-diez h2 {
+      font-size: 1.5rem; }
+  section .tecnologias-tarjetas {
+    padding-left: 4rem;
+    padding-right: 4rem; }
+    section .tecnologias-tarjetas div:hover {
+      transform: scale(1.03);
+      transition-duration: 0.5s; } }
+
+/*ESTILOS TECNOLOGIA PC MEDIANA*/
+@media screen and (min-width: 1250px) {
+  main .main-tecnologias .contenido-nueve h3 {
+    font-size: 1rem; }
+  main .main-tecnologias .contenido-nueve h1 {
+    font-size: 3rem; }
+  main .main-tecnologias .contenido-nueve p {
+    font-size: 1rem; }
+  main .main-tecnologias .contenido-nueve .boton-tres {
+    font-size: 1.3rem;
+    padding: 0.7rem 1.7rem 0.7rem 1.7rem; }
+  main .main-tecnologias .contenido-nueve h5 {
+    font-size: 0.9rem; }
+  section .tecnologias-tarjetas {
+    padding-left: 6rem;
+    padding-right: 6rem; } }
+
+/*ESTILOS TECNOLOGIA PC MEDIANA GRANDE*/
+@media screen and (min-width: 1300px) {
+  main .main-tecnologias .contenido-nueve {
+    padding-left: 4rem; }
+  section .contenido-diez {
+    padding-left: 8rem;
+    padding-right: 8rem; }
+  section .tecnologias-tarjetas {
+    padding-left: 15rem;
+    padding-right: 15rem; } }
+
+/*ESTILOS TECNOLOGIA PC GRANDE*/
+@media screen and (min-width: 1548px) {
+  main .main-tecnologias .contenido-nueve {
+    padding-left: 8rem; }
+  section .contenido-diez {
+    padding-left: 15rem;
+    padding-right: 15rem; }
+  section .tecnologias-tarjetas {
+    padding-left: 25rem;
+    padding-right: 25rem; } }
+
+.main-home .contenido-uno .boton, .main-servicios .contenido-siete .boton-dos, .main-tecnologias .contenido-nueve .boton-tres, .main-industrias .contenido-once .boton-cuatro, .main-historias .contenido-doce .boton-cinco {
+  background-color: #dd8f12;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+  margin-left: 1rem;
+  font-weight: bolder;
+  color: white;
+  box-shadow: -1px 3px 5px black; }
+
+.main-home, footer, .main-servicios, .main-tecnologias, .main-industrias, .main-historias {
+  display: flex;
+  flex-direction: column; }
+
+.main-home .contenido-uno, .main-home .contenido-dos, .main-home .imagenes-main, section, .main-servicios .contenido-siete, .main-tecnologias .contenido-nueve, .main-industrias .contenido-once, .main-historias .contenido-doce {
+  padding-left: 0.8rem;
+  padding-right: 0.8rem; }
+
+.main-home .contenido-uno h3, .main-servicios .contenido-siete h3, .main-tecnologias .contenido-nueve h3, .main-industrias .contenido-once h3, .main-historias .contenido-doce h3 {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  color: #dd8f12;
+  letter-spacing: 2px;
+  font-weight: bold; }
+
+.main-home .contenido-uno h1, .main-servicios .contenido-siete h1, .main-tecnologias .contenido-nueve h1, .main-industrias .contenido-once h1, .main-historias .contenido-doce h1 {
+  margin-bottom: 2rem;
+  color: #14213D;
+  font-weight: bold;
+  font-size: 2rem; }
+
+.main-home .contenido-uno p, .main-servicios .contenido-siete p, .main-tecnologias .contenido-nueve p, .main-industrias .contenido-once p, .main-historias .contenido-doce p {
+  margin-bottom: 2.5rem;
+  color: #14213D;
+  font-weight: 700; }
+
+.main-servicios .contenido-siete h5, .main-tecnologias .contenido-nueve h5, .main-industrias .contenido-once h5, .main-historias .contenido-doce h5 {
+  margin-top: 2.5rem;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  color: #dd8f12;
+  letter-spacing: 2px; }
+
+section .contenido-ocho h3, section .contenido-diez h3, .gris .contenido-trece h3 {
+  font-size: 1.6rem;
+  color: #dd8f12;
+  font-weight: 1000;
+  letter-spacing: 2px;
+  margin-bottom: 1rem; }
+
+section .contenido-ocho h2, section .contenido-diez h2 {
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+  color: white;
+  font-weight: bold; }
+
+/*ESTILOS INDUSTRIAS*/
+/*ESTILOS MAIN INDUSTRIAS*/
+.main-industrias {
+  background-color: #f2f2f2; }
+  .main-industrias .contenido-once {
+    padding-top: 7rem; }
+  .main-industrias .imagen-cuatro img {
+    width: 100%;
+    padding: 4.5rem 0rem 4.5rem 0rem; }
+
+/*ESTILOS CONTENIDO SECUNDARIO INDUSTRIAS*/
+.gris {
+  background-color: #f2f2f2; }
+  .gris .tarjetas-finanzas {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center; }
+    .gris .tarjetas-finanzas div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+      gap: 1rem;
+      padding: 1.8rem;
+      margin: 0.8rem;
+      width: 335px;
+      background-color: #14213D;
+      height: 400px;
+      box-shadow: -1px 3px 10px black; }
+      .gris .tarjetas-finanzas div h3 {
+        color: white;
+        font-weight: bold; }
+      .gris .tarjetas-finanzas div p {
+        color: white;
+        font-weight: 700; }
+
+/*ESTILOS INDUSTRIAS TABLET*/
+@media screen and (min-width: 600px) {
+  .main-industrias {
+    padding-left: 3rem;
+    padding-right: 3rem; }
+  .gris .tarjetas-finanzas {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 1rem; } }
+
+@media screen and (min-width: 780px) {
+  .main-industrias p {
+    width: 650px; } }
+
+/*ESTILOS INDUSTRIAS PC PEQUEÑA*/
+@media screen and (min-width: 992px) {
+  main .main-industrias {
+    display: grid;
+    grid-template-columns: 45% 55%;
+    grid-template-rows: auto;
+    grid-template-areas: "contenido-once imagen-cuatro";
+    align-items: center;
+    padding: 0;
+    height: 100vh;
+    padding-left: 1rem;
+    padding-right: 0rem; }
+    main .main-industrias .contenido-once {
+      grid-area: contenido-once; }
+      main .main-industrias .contenido-once p {
+        width: 80%; }
+    main .main-industrias .imagen-cuatro {
+      grid-area: imagen-cuatro; }
+  .gris .tarjetas-finanzas {
+    padding-top: 5.5rem; }
+    .gris .tarjetas-finanzas div:hover {
+      transform: scale(1.03);
+      transition-duration: 0.5s; } }
+
+/*ESTILOS INDUSTRIAS PC MEDIANA*/
+@media screen and (min-width: 1250px) {
+  main .main-industrias .contenido-once h3 {
+    font-size: 1rem; }
+  main .main-industrias .contenido-once h1 {
+    font-size: 3rem; }
+  main .main-industrias .contenido-once p {
+    font-size: 1rem; }
+  main .main-industrias .contenido-once .boton-cuatro {
+    font-size: 1.3rem;
+    padding: 0.7rem 1.7rem 0.7rem 1.7rem; }
+  main .main-industrias .contenido-once h5 {
+    font-size: 0.9rem; }
+  section .industrias-tarjetas {
+    padding-left: 6rem;
+    padding-right: 6rem; } }
+
+/*ESTILOS INDUSTRIAS PC MEDIANA GRANDE*/
+@media screen and (min-width: 1300px) {
+  main .main-industrias .contenido-once {
+    padding-left: 4rem; } }
+
+/*ESTILOS INDUSTRIAS PC GRANDE*/
+@media screen and (min-width: 1548px) {
+  main .main-industrias .contenido-once {
+    padding-left: 8rem; } }
+
+.main-home .contenido-uno .boton, .main-servicios .contenido-siete .boton-dos, .main-tecnologias .contenido-nueve .boton-tres, .main-industrias .contenido-once .boton-cuatro, .main-historias .contenido-doce .boton-cinco {
+  background-color: #dd8f12;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+  margin-left: 1rem;
+  font-weight: bolder;
+  color: white;
+  box-shadow: -1px 3px 5px black; }
+
+.main-home, footer, .main-servicios, .main-tecnologias, .main-industrias, .main-historias {
+  display: flex;
+  flex-direction: column; }
+
+.main-home .contenido-uno, .main-home .contenido-dos, .main-home .imagenes-main, section, .main-servicios .contenido-siete, .main-tecnologias .contenido-nueve, .main-industrias .contenido-once, .main-historias .contenido-doce {
+  padding-left: 0.8rem;
+  padding-right: 0.8rem; }
+
+.main-home .contenido-uno h3, .main-servicios .contenido-siete h3, .main-tecnologias .contenido-nueve h3, .main-industrias .contenido-once h3, .main-historias .contenido-doce h3 {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  color: #dd8f12;
+  letter-spacing: 2px;
+  font-weight: bold; }
+
+.main-home .contenido-uno h1, .main-servicios .contenido-siete h1, .main-tecnologias .contenido-nueve h1, .main-industrias .contenido-once h1, .main-historias .contenido-doce h1 {
+  margin-bottom: 2rem;
+  color: #14213D;
+  font-weight: bold;
+  font-size: 2rem; }
+
+.main-home .contenido-uno p, .main-servicios .contenido-siete p, .main-tecnologias .contenido-nueve p, .main-industrias .contenido-once p, .main-historias .contenido-doce p {
+  margin-bottom: 2.5rem;
+  color: #14213D;
+  font-weight: 700; }
+
+.main-servicios .contenido-siete h5, .main-tecnologias .contenido-nueve h5, .main-industrias .contenido-once h5, .main-historias .contenido-doce h5 {
+  margin-top: 2.5rem;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  color: #dd8f12;
+  letter-spacing: 2px; }
+
+section .contenido-ocho h3, section .contenido-diez h3, .gris .contenido-trece h3 {
+  font-size: 1.6rem;
+  color: #dd8f12;
+  font-weight: 1000;
+  letter-spacing: 2px;
+  margin-bottom: 1rem; }
+
+section .contenido-ocho h2, section .contenido-diez h2 {
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+  color: white;
+  font-weight: bold; }
+
+/*ESTILOS HISTORIAS DE EXITO*/
+/*ESTILOS MAIN HISTORIAS DE EXITO*/
+.main-historias {
+  background-color: #f2f2f2; }
+  .main-historias .contenido-doce {
+    padding-top: 7rem; }
+  .main-historias .imagen-cinco img {
+    width: 95%;
+    padding: 1.5rem 0rem 1rem 0rem; }
+
+/*ESTILOS CONTENIDO SECUNDARIO HISTORIAS DE EXITO*/
+.gris {
+  background-color: #f2f2f2; }
+  .gris .contenido-trece {
+    padding-top: 6rem; }
+    .gris .contenido-trece h2 {
+      margin-top: 1rem;
+      margin-bottom: 4rem;
+      color: #14213D;
+      font-weight: bold; }
+  .gris .tarjetas-historias {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center; }
+    .gris .tarjetas-historias div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+      gap: 1rem;
+      padding: 1.8rem;
+      margin: 0.8rem;
+      width: 335px;
+      background-color: white;
+      height: 400px;
+      box-shadow: -1px 3px 10px black; }
+      .gris .tarjetas-historias div h3 {
+        color: black;
+        font-weight: bold; }
+      .gris .tarjetas-historias div p {
+        color: black;
+        font-weight: 700; }
+
+/*ESTILOS HISTORIAS TABLET*/
+@media screen and (min-width: 600px) {
+  .main-historias {
+    padding-left: 3rem;
+    padding-right: 3rem; }
+  .gris .contenido-trece {
+    padding-left: 3rem;
+    padding-right: 3rem; }
+  .gris .tarjetas-historias {
+    padding-bottom: 1rem; } }
+
+@media screen and (min-width: 780px) {
+  .main-historias p {
+    width: 650px; } }
+
+/*ESTILOS HISTORIAS PC PEQUEÑA*/
+@media screen and (min-width: 992px) {
+  main .main-historias {
+    display: grid;
+    grid-template-columns: 45% 55%;
+    grid-template-rows: auto;
+    grid-template-areas: "contenido-doce imagen-cinco";
+    align-items: center;
+    padding: 0;
+    height: 100vh;
+    gap: 6rem;
+    padding-left: 1rem;
+    padding-right: 0rem; }
+    main .main-historias .contenido-doce {
+      grid-area: contenido-doce; }
+      main .main-historias .contenido-doce p {
+        width: 80%; }
+    main .main-historias .imagen-cinco {
+      grid-area: imagen-cinco;
+      width: 80%;
+      margin-top: 5rem; }
+  .gris .contenido-trece {
+    padding-left: 1rem; }
+    .gris .contenido-trece h2 {
+      font-size: 1.5rem; }
+  .gris .tarjetas-historias div:hover {
+    transform: scale(1.03);
+    transition-duration: 0.5s; } }
+
+/*ESTILOS HISTORIAS PC MEDIANA*/
+@media screen and (min-width: 1250px) {
+  main .main-historias .contenido-doce h3 {
+    font-size: 1rem; }
+  main .main-historias .contenido-doce h1 {
+    font-size: 3rem;
+    font-weight: bolder; }
+  main .main-historias .contenido-doce p {
+    font-size: 1rem; }
+  main .main-historias .contenido-doce .boton-cinco {
+    font-size: 1.3rem;
+    padding: 0.7rem 1.7rem 0.7rem 1.7rem; }
+  main .main-historias .contenido-doce h5 {
+    font-size: 0.9rem; } }
+
+/*ESTILOS HISTORIAS PC MEDIANA GRANDE*/
+@media screen and (min-width: 1300px) {
+  main .main-historias .contenido-doce {
+    padding-left: 4rem; }
+  .gris .contenido-trece {
+    padding-left: 8rem;
+    padding-right: 8rem; }
+  .gris .tarjetas-historias {
+    padding-left: 4rem;
+    padding-right: 4rem; } }
+
+/*ESTILOS HISTORIAS PC GRANDE*/
+@media screen and (min-width: 1548px) {
+  main .main-historias .contenido-doce {
+    padding-left: 8rem; }
+  .gris .contenido-trece {
+    padding-left: 15rem;
+    padding-right: 15rem; }
+  .gris .tarjetas-historias {
+    padding-left: 15rem;
+    padding-right: 15rem; } }

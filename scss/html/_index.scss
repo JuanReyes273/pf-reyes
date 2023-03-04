@@ -1,0 +1,546 @@
+@import "../base/extend";
+@import "../base/mixin";
+@import "../base/variables";
+
+/*ESTILOS INDEX*/
+/*ESTILOS HEADER*/
+
+header{
+    background-color: white;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    nav{
+        div{
+            div{
+                ul{
+                    li{
+                        color: $color-tres;
+                        font-size: 1rem;
+                        font-weight: 1000;
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*ESTILOS MAIN INDEX*/
+
+.main-home{
+    @extend %mains;
+    background-color: $color-cinco;
+    .contenido-uno{
+        @extend %contenidos-iniciopaginas;
+        padding-top: 7rem;
+        h3{
+            @extend %main-h3;
+        }
+        h1{
+            @extend %main-h1;
+        }
+        p{
+            @extend %main-p;
+        }
+        .boton{
+            @extend %boton;
+        }
+    }
+    .contenido-dos{
+        @extend %contenidos-iniciopaginas;
+        h3{
+            font-size: 1.2rem;
+            margin-top: 2.5rem;
+            color: $color-tres;
+            font-weight: 1000;
+            margin-bottom: 1rem;
+        }
+        p{
+            color: $color-tres;
+            font-weight: 700;
+        }
+    }
+    .imagenes-main{
+        margin-top: 2.5rem;
+        margin-bottom: 3rem;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 1.5rem;
+        @extend %contenidos-iniciopaginas;
+        div{
+            img{
+                width: 95%;
+            }
+        }
+    }
+    .contenedor-imagen img{
+        width: 100%;
+    }
+}
+
+/*ESTILOS CONTENIDO SECUNDARIO INDEX*/
+
+section{
+    @extend %contenidos-iniciopaginas;
+    .secundario-home{
+        .contenido-tres{
+            h3{
+                font-size: 1.2rem;
+                padding-top: 4rem;
+                color: $color-dos;
+                font-weight: 1000;
+                letter-spacing: 2px;
+            }
+            h2{
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+                margin-left: 1rem;
+                color: white;
+                font-weight: bold;
+            }
+            p{
+                color: white;
+                font-weight: 600;
+            }
+        }
+        .contenido-cuatro{
+            h2{
+                margin-top: 4rem;
+                margin-bottom: 1rem;
+                margin-left: 1rem;
+                color:white;
+                font-weight: bold;
+            }
+            p{
+                color: white;
+                font-weight: 600;
+            }
+            h3{
+                font-size: 1.2rem;
+                padding-bottom: 4rem;
+                color: $color-dos;
+                font-weight: 700;
+                margin-bottom: 0px;
+            }
+        }
+    }
+}
+
+/*ESTILOS CONTENIDO TERCIARIO INDEX*/
+
+section{
+    .contenido-cinco{
+        h2{
+            font-size: 5rem;
+            color: white;
+            font-weight: bolder;
+        }
+        h3{
+            font-size: 1.4rem;
+            margin-bottom: 4rem;
+            font-weight: bold;
+            color: white;
+        }
+    }
+    .terciario-home{
+        @include cartas-externo;
+        div{
+            @include cartas-interno;
+            background-color: $color-cuatro;
+            height: 450px;
+            box-shadow: -1px 3px 10px grey;
+            h3{
+                color: #14213D;
+                font-weight: bold;
+            }
+            p{
+                color: #14213D;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+/*ESTILOS CONTENIDO CUATERNARIO INDEX*/
+
+section{
+    background-color: $color-tres;
+    .contenido-seis{
+        h2{
+            padding-top: 4rem;
+            margin-bottom: 1rem;
+            margin-left: 1rem;
+            color: $color-dos;
+            font-weight: bolder;
+        }
+        P{
+            margin-bottom: 4rem;
+            color: white;
+            font-weight: 600;
+        }
+    }
+    .cuaternario-home{
+        @include cartas-externo;
+        div{
+            @include cartas-interno;
+            background-color: $color-dos;;
+            height: 450px;
+            box-shadow: -1px 3px 10px $color-dos;
+            h6{
+                color: black;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+/*ESTILOS CONTENIDO FOOTER*/
+
+footer{
+    padding-bottom: 1rem;
+    background-color: $color-cinco;
+    @extend %mains;
+    .logos-comunicacion{
+        display: flex;
+        gap: 0.5rem;
+        justify-content: center;
+        padding-top: 0.8rem;
+    }
+    h5{
+        font-size: 0.6rem;
+        text-align: center;
+        margin-top: 0.8rem;
+        margin-bottom: 0px;
+    }
+}
+
+/*ESTILOS INDEX TABLET*/
+
+@media screen and (min-width:495px){
+    .main-home{
+        .imagenes-main{
+            gap: 4rem;
+            div{
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:600px){
+    header{
+        nav{
+            margin-left: 3rem;
+        }
+    }
+    .main-home{
+        padding-left: 3rem;
+        padding-right: 3rem;
+        .imagenes-main{
+            gap: 4.5rem;
+        }
+    }
+    section{
+        .contenido-tres{
+            padding-left: 3rem;
+            padding-right: 3rem;
+        }
+        .contenido-cuatro{
+            padding-left: 3rem;
+            padding-right: 3rem;
+        }
+        .contenido-cinco{
+            padding-left: 3rem;
+            padding-right: 3rem;
+        }
+        .contenido-seis{
+            padding-left: 3rem;
+            padding-right: 3rem;
+        }
+        .cuaternario-home{
+            padding-bottom: 1rem;
+        }
+    }
+    footer{
+        h5{
+            font-size: 1rem;
+        }        
+    }
+}
+
+@media screen and (min-width:750px){
+    header{
+        nav{
+            margin-left: 5%;
+        }
+    }
+    .main-home{
+        padding-left: 5%;
+        padding-right: 5%;
+        .imagenes-main{
+            gap: 0.5rem;
+            div{
+                img{
+                    width: 90%;
+                }
+            }
+        }
+    }
+}
+
+/*ESTILOS INDEX PC PEQUEÑA*/
+
+@media screen and (min-width:992px){
+    header{
+        nav{
+            margin-left: 1rem;
+            ul{
+                li:hover{
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+    main{
+        .main-home{
+            display: grid;
+            grid-template-columns: 45% 55%;
+            grid-template-rows: 2.5fr 1fr 0.5fr;
+    
+            grid-template-areas: 
+                "contenido-uno contenedor-imagen"
+                "contenido-dos contenedor-imagen"
+                "imagenes-main contenedor-imagen";
+            height: 100vh;
+            align-items: center;
+            padding-left: 1rem;
+            padding-right: 0rem;
+            .contenido-uno{
+                grid-area: contenido-uno;
+                width: 70%;
+            }
+            .contenido-dos{
+                grid-area: contenido-dos;
+                width: 70%;
+            }
+            .imagenes-main{
+                grid-area: imagenes-main;
+                width: 400px;
+                div{
+                    img{
+                        width: 80%;
+                    }
+                }
+            }
+            .contenedor-imagen{
+                grid-area: contenedor-imagen;
+            }        
+        }
+    }
+    section{
+        .contenido-tres{
+            padding-top: 2.5rem;
+            padding-left: 1rem;
+        }
+        .contenido-cuatro{
+            padding-left: 1rem;
+        }
+        .terciario-home{
+            div:hover{
+                transform: scale(1.03);
+                transition-duration: 0.5s;
+            }
+        }
+        .contenido-cinco{
+            padding-left: 1rem;
+        }
+        .contenido-seis{
+            padding-left: 1rem;
+        }
+        .cuaternario-home{
+            div:hover{
+                transform: scale(1.03);
+                transition-duration: 0.5s;
+            }
+        }
+    }
+}
+
+/*ESTILOS INDEX PC MEDIANA*/
+@media screen and (min-width:1250px){
+    main{
+        .main-home{
+            display: grid;
+            grid-template-columns: 55% 45%;
+            grid-template-rows: 4fr 1fr 2fr;
+    
+            grid-template-areas: 
+                "contenido-uno contenedor-imagen"
+                "contenido-dos contenedor-imagen"
+                "imagenes-main contenedor-imagen";
+            justify-content: space-between;
+            .contenido-uno{
+                grid-area: contenido-uno;
+                width: 80%;
+                h3{
+                    font-size: 1rem;
+                }
+                h1{
+                    font-size: 3rem;
+                }
+                p{
+                    font-size: 1rem;
+                }
+                .boton{
+                    font-size: 1.3rem;
+                    padding: 0.7rem 1.7rem 0.7rem 1.7rem;
+                }
+            }
+            .contenido-dos{
+                grid-area: contenido-dos;
+                width: 80%;
+                h3{
+                    font-size: 1.7rem;
+                }
+                p{
+                    font-size: 1rem;
+                }
+            }
+            .imagenes-main{
+                grid-area: imagenes-main;
+                width: 100%;
+                div{
+                    img{
+                        width: 70%;
+                    }
+                }
+            }
+            .contenedor-imagen{
+                grid-area: contenedor-imagen;
+            }        
+        }
+    }
+    section{
+        .contenido-tres{
+            padding-left: 1rem;
+        }
+        .contenido-cuatro{
+            padding-left: 1rem;
+        }
+        .contenido-cinco{
+            padding-left: 1rem;
+        }
+        .contenido-seis{
+            padding-left: 1rem;
+        }
+    }
+}
+
+/*ESTILOS INDEX PC MEDIANA GRANDE*/
+
+@media screen and (min-width:1300px){
+    header{
+        nav{
+            margin-left: 4rem;
+        }
+    }
+    main{
+        .main-home{
+            .contenido-uno{
+                padding-left: 4rem; 
+            }
+            .contenido-dos{
+                padding-left: 4rem; 
+            }
+            .imagenes-main{
+                padding-left: 4rem; 
+            }
+        }
+    }
+    section{
+        .contenido-tres{
+            padding-left: 8rem; 
+            padding-right: 8rem;
+        }
+        .contenido-cuatro{
+            padding-left: 8rem; 
+            padding-right: 8rem;
+        }
+        .terciario-home{
+            padding-left: 4rem; 
+            padding-right: 4rem;
+        }
+        .contenido-cinco{
+            padding-left: 8rem; 
+            padding-right: 8rem;
+        }
+        .contenido-seis{
+            padding-left: 8rem; 
+            padding-right: 8rem;
+        }
+        .cuaternario-home{
+            padding-left: 4rem; 
+            padding-right: 4rem;
+        }
+    }
+}
+
+/*ESTILOS INDEX PC GRANDE*/
+
+@media screen and (min-width:1548px){
+    header{
+        nav{
+            margin-left: 8rem;
+        }
+    }
+    main{
+        .main-home{
+            grid-template-rows: 4fr 0.1fr 3fr;
+            .contenido-uno{
+                padding-left: 8rem; 
+                p{
+                    margin-bottom: 3rem;
+                }
+            }
+            .contenido-dos{
+                padding-left: 8rem; 
+                h3{
+                    margin-top: 0;
+                }
+            }
+            .imagenes-main{
+                padding-left: 8rem; 
+            }
+        }
+    }
+    section{
+        .contenido-tres{
+            padding-left: 15rem; 
+            padding-right: 15rem;
+        }
+        .contenido-cuatro{
+            padding-left: 15rem; 
+            padding-right: 15rem;
+        }
+        .terciario-home{
+            padding-left: 15rem; 
+            padding-right: 15rem;
+        }
+        .contenido-cinco{
+            padding-left: 15rem; 
+            padding-right: 15rem;
+        }
+        .contenido-seis{
+            padding-left: 15rem; 
+            padding-right: 15rem;
+        }
+        .cuaternario-home{
+            padding-left: 15rem; 
+            padding-right: 15rem;
+        }
+    }
+}

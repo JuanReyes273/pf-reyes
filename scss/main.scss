@@ -1,0 +1,18 @@
+/*RESET*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    font-family: 'Lato', sans-serif;
+}
+
+@import "html/index";
+@import "html/servicios";
+@import "html/tecnologias";
+@import "html/industrias";
+@import "html/historias";

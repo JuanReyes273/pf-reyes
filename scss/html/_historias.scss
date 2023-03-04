@@ -1,0 +1,214 @@
+@import "../base/extend";
+@import "../base/mixin";
+@import "../base/variables";
+
+/*ESTILOS HISTORIAS DE EXITO*/
+/*ESTILOS MAIN HISTORIAS DE EXITO*/
+
+.main-historias{
+    background-color: $color-cinco;
+    @extend %mains;
+    .contenido-doce{
+        padding-top: 7rem;
+        @extend %contenidos-iniciopaginas;
+        h3{
+            @extend %main-h3;
+        }
+        h1{
+            @extend %main-h1;
+        }
+        p{
+            @extend %main-p;
+        }
+        .boton-cinco{
+            @extend %boton;
+        }
+        h5{
+            @extend %main-h5;
+        }
+    }
+    .imagen-cinco img{
+        width: 95%;
+        padding: 1.5rem 0rem 1rem 0rem; 
+    }
+}
+
+/*ESTILOS CONTENIDO SECUNDARIO HISTORIAS DE EXITO*/
+
+.gris{
+    background-color: $color-cinco;
+    .contenido-trece{
+        padding-top: 6rem;
+        h3{
+            @extend %contenido-h3;
+        }
+        h2{
+            margin-top: 1rem;
+            margin-bottom: 4rem;
+            color: $color-tres;
+            font-weight: bold;
+        }
+    }
+    .tarjetas-historias{
+        @include cartas-externo;
+        div{
+            @include cartas-interno;
+            background-color: white;
+            height: 400px;
+            box-shadow: -1px 3px 10px black;
+            h3{
+                color: black;
+                font-weight: bold;
+            }
+            p{
+                color: black;
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+/*ESTILOS HISTORIAS TABLET*/
+
+@media screen and (min-width:600px){
+    .main-historias{
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    .gris{
+        .contenido-trece{
+            padding-left: 3rem;
+            padding-right: 3rem;
+        }
+        .tarjetas-historias{
+            padding-bottom: 1rem;
+        }
+    }
+}
+
+@media screen and (min-width:780px){
+    .main-historias{
+        p{
+            width: 650px;
+        }
+    }
+}
+
+/*ESTILOS HISTORIAS PC PEQUEÑA*/
+
+@media screen and (min-width:992px){
+    main{
+        .main-historias{
+            display: grid;
+            grid-template-columns: 45% 55%;
+            grid-template-rows: auto;
+
+            grid-template-areas: 
+                "contenido-doce imagen-cinco";
+            align-items: center;
+            padding: 0;
+            height: 100vh;
+            gap: 6rem;
+            padding-left: 1rem;
+            padding-right: 0rem;
+            .contenido-doce{
+                grid-area: contenido-doce;
+                p{
+                    width: 80%;
+                }
+            }
+            .imagen-cinco{
+                grid-area: imagen-cinco;
+                width: 80%;
+                margin-top: 5rem;
+            }
+        }
+    }
+    .gris{
+        .contenido-trece{
+            padding-left: 1rem;
+            h2{
+                font-size: 1.5rem;
+            }
+        }
+        .tarjetas-historias{
+            div:hover{
+                transform: scale(1.03);
+                transition-duration: 0.5s;
+            }
+        }
+    }
+}
+
+/*ESTILOS HISTORIAS PC MEDIANA*/
+
+@media screen and (min-width:1250px){
+    main{
+        .main-historias{
+            .contenido-doce{
+                h3{
+                    font-size: 1rem;
+                }
+                h1{
+                    font-size: 3rem;
+                    font-weight: bolder;
+                }
+                p{
+                    font-size: 1rem;
+                }
+                .boton-cinco{
+                    font-size: 1.3rem;
+                    padding: 0.7rem 1.7rem 0.7rem 1.7rem;
+                }
+                h5{
+                    font-size: 0.9rem;
+                }
+            }
+        }
+    }
+}
+
+/*ESTILOS HISTORIAS PC MEDIANA GRANDE*/
+
+@media screen and (min-width:1300px){
+    main{
+        .main-historias{
+            .contenido-doce{
+                padding-left: 4rem; 
+            }
+        }
+    }
+    .gris{
+        .contenido-trece{
+            padding-left: 8rem; 
+            padding-right: 8rem;
+        }
+        .tarjetas-historias{
+            padding-left: 4rem; 
+            padding-right: 4rem;
+        }
+    }
+}
+
+/*ESTILOS HISTORIAS PC GRANDE*/
+
+@media screen and (min-width:1548px){
+    main{
+        .main-historias{
+            .contenido-doce{
+                padding-left: 8rem; 
+            }
+        }
+    }
+    .gris{
+        .contenido-trece{
+            padding-left: 15rem; 
+            padding-right: 15rem;
+        }
+        .tarjetas-historias{
+            padding-left: 15rem; 
+            padding-right: 15rem;
+        }
+    }
+}
+

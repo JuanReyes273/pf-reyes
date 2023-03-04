@@ -1,0 +1,211 @@
+@import "../base/extend";
+@import "../base/mixin";
+@import "../base/variables";
+
+/*ESTILOS SERVICIOS*/
+/*ESTILOS MAIN SERVICIOS*/
+
+.main-servicios{
+    background-color: white;
+    @extend %mains;
+    .contenido-siete{
+            padding-top: 7rem;
+            @extend %contenidos-iniciopaginas;
+            h3{
+                @extend %main-h3;
+            }
+            h1{
+                @extend %main-h1;
+            }
+            p{
+                @extend %main-p;
+            }
+            .boton-dos{
+                @extend %boton;
+            }
+            h5{
+                @extend %main-h5;
+            }      
+    }
+    .imagen-dos img{
+        width: 100%;
+    }
+}
+
+/*ESTILOS CONTENIDO SECUNDARIO SERVICIOS*/
+
+section{
+    .contenido-ocho{
+        padding-top: 6rem;
+        h3{
+            @extend %contenido-h3;
+        }
+        h2{
+            @extend %contenido-h2;
+        }
+    }
+    .industrias-tarjetas{
+        @include cartas-externo;
+        div{
+            @include cartas-interno;
+            background-color: $color-cuatro;
+            height: 400px;
+            box-shadow: -1px 3px 10px grey;
+            h3{
+                color: white;
+                font-weight: bold;
+            }
+            p{
+                color: white;
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+/*ESTILOS SERVICIOS TABLET*/
+
+@media screen and (min-width:600px){
+    .main-servicios{
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    section{
+        .contenido-ocho{
+            padding-left: 3rem;
+            padding-right: 3rem;
+        }
+        .industrias-tarjetas{
+            padding-bottom: 1rem;
+        }
+    }
+}
+
+@media screen and (min-width:780px){
+    .main-servicios{
+        p{
+            width: 650px;
+        }
+    }
+}
+
+/*ESTILOS SERVICIOS PC PEQUEÑA*/
+
+@media screen and (min-width:992px){
+    main{
+        .main-servicios{
+            display: grid;
+            grid-template-columns: 45% 50%;
+            grid-template-rows: auto;
+    
+            grid-template-areas: 
+                "contenido-siete imagen-dos";
+            align-items: center;
+            padding: 0;
+            height: 100vh;
+            padding-left: 1rem;
+            padding-right: 0rem;
+            gap: 4rem;
+            .contenido-siete{
+                grid-area: contenido-siete;
+                p{
+                    width: 80%;
+                }
+            }
+            .imagen-dos{
+                grid-area: imagen-dos;
+            }
+        }
+        
+    }
+    section{
+        .contenido-ocho{
+            padding-left: 1rem;
+            h2{
+                font-size: 1.5rem;
+            }
+        }
+        .industrias-tarjetas{
+            padding-left: 4rem;
+            padding-right: 4rem;
+            div:hover{
+                transform: scale(1.03);
+                transition-duration: 0.5s;
+            }
+        }
+    }
+}
+
+/*ESTILOS SERVICIOS PC MEDIANA*/
+
+@media screen and (min-width:1250px){
+    main{
+        .main-servicios{
+            .contenido-siete{
+                h3{
+                    font-size: 1rem;
+                }
+                h1{
+                    font-size: 3rem;
+                }
+                p{
+                    font-size: 1rem;
+                }
+                .boton-dos{
+                    font-size: 1.3rem;
+                    padding: 0.7rem 1.7rem 0.7rem 1.7rem;
+                }
+                h5{
+                    font-size: 0.9rem;
+                }
+            }
+        }
+    }
+    section{
+        .industrias-tarjetas{
+            padding-left: 6rem;
+            padding-right: 6rem;
+        }
+    }
+}
+
+/*ESTILOS SERVICIOS PC MEDIANA GRANDE*/
+
+@media screen and (min-width:1300px){
+    main{
+        .main-servicios{
+            .contenido-siete{
+                padding-left: 4rem; 
+            }
+            .imagen-dos{
+                img{
+                    width: 85%;
+                }
+            }
+        }
+    }
+    section{
+        .contenido-ocho{
+            padding-left: 8rem; 
+            padding-right: 8rem;
+        }
+    }
+}
+
+/*ESTILOS SERVICIOS PC GRANDE*/
+
+@media screen and (min-width:1548px){
+    main{
+        .main-servicios{
+            .contenido-siete{
+                padding-left: 8rem; 
+            }
+        }
+    }
+    section{
+        .contenido-ocho{
+            padding-left: 15rem; 
+            padding-right: 15rem;
+        }
+    }
+}
